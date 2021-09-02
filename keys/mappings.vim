@@ -1,4 +1,4 @@
-" Better nav for omnicomplete
+ " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
@@ -39,4 +39,7 @@ nnoremap <Leader>O O<Esc>^Da
 nnoremap <leader>/ :Commentary<cr>
 vnoremap <leader>/ :Commentary<cr>
 
+"selecionar tudo
+nnoremap <C-a> ggVG
 
+nnoremap <Leader>c :let @+=expand('%:p')<CR>

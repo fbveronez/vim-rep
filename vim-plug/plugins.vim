@@ -17,10 +17,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     
     "Themes
-    "Plug 'joshdick/onedark.vim'
+    Plug 'joshdick/onedark.vim'
     "Plug 'NLKNguyen/papercolor-theme'
     "Plug 'christianchiarulli/nvcode.vim'
-    Plug 'morhetz/gruvbox'
+    "Plug 'morhetz/gruvbox'
+    Plug 'rakr/vim-one'
     "Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     
@@ -66,6 +67,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Xtabline 
     Plug 'mg979/vim-xtabline' 
 
+    "multiple cursors
+    Plug 'terryma/vim-multiple-cursors'
+
     "IndentLine
-    Plug 'Yggdroot/indentLine'
+"    Plug 'Yggdroot/indentLine'
 call plug#end()
+

@@ -11,6 +11,7 @@ let g:fzf_action = {
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 map <C-f> :Files<CR>
+map <C-p> :Ag<CR>
 map <leader>b :Buffers<CR>
 nnoremap <leader>g :Rg<CR>
 "nnoremap <leader>t :Tags<CR>
@@ -68,3 +69,4 @@ command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
